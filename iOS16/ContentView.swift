@@ -45,9 +45,7 @@ struct ContentView: View {
                     .background(.white.opacity(0.2).gradient)
                     .cornerRadius(10)
                     .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke()
-                            .foregroundStyle(.linearGradient(colors: [.white.opacity(0.5), .clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
+                        stroke
                     )
             }
             .accentColor(.primary)
@@ -57,14 +55,18 @@ struct ContentView: View {
         .background(.ultraThinMaterial)
         .cornerRadius(10)
         .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke()
-                .foregroundStyle(.linearGradient(colors: [.white.opacity(0.5), .clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
+            stroke
         )
         .shadow(color: .black.opacity(0.3), radius: 20, y: 20)
         .frame(maxWidth: 500)
         .padding(10)
         .dynamicTypeSize(.xSmall ... .xxxLarge)
+    }
+    
+    var stroke: some View {
+        RoundedRectangle(cornerRadius: 10)
+            .stroke()
+            .foregroundStyle(.linearGradient(colors: [.white.opacity(0.5), .clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 
