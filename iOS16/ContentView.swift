@@ -14,6 +14,11 @@ struct ContentView: View {
     
     var body: some View {
         content
+            .opacity(showMessage ? 1 : 0)
+            .scaleEffect(showMessage ? 1 : 0)
+            .rotationEffect(.degrees(showMessage ? 0 : 90))
+            .offset(y: showMessage ? 0 : 500)
+            .padding()
     }
     
     var content: some View {
@@ -37,7 +42,9 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
             Button {
-                
+                withAnimation(.easeInOut) {
+                    showMessage = false
+                }
             } label: {
                 Text("Got it")
                     .padding(.all)
