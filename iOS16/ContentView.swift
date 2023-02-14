@@ -13,6 +13,10 @@ struct ContentView: View {
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        content
+    }
+    
+    var content: some View {
         VStack(alignment: .center, spacing: 20.0) {
             Image(systemName: "timelapse", variableValue: time)
                 .imageScale(.large)
