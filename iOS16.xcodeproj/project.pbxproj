@@ -11,6 +11,7 @@
 		DCB57E602996396200316A8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E5F2996396200316A8E /* ContentView.swift */; };
 		DCB57E622996396600316A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB57E612996396600316A8E /* Assets.xcassets */; };
 		DCB57E652996396600316A8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB57E642996396600316A8E /* Preview Assets.xcassets */; };
+		DCB57E75299B9AC700316A8E /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E74299B9AC700316A8E /* NavigationStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DCB57E5F2996396200316A8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCB57E612996396600316A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCB57E642996396600316A8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCB57E74299B9AC700316A8E /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DCB57E5D2996396200316A8E /* iOS16App.swift */,
 				DCB57E5F2996396200316A8E /* ContentView.swift */,
+				DCB57E74299B9AC700316A8E /* NavigationStackView.swift */,
 				DCB57E612996396600316A8E /* Assets.xcassets */,
 				DCB57E632996396600316A8E /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB57E602996396200316A8E /* ContentView.swift in Sources */,
+				DCB57E75299B9AC700316A8E /* NavigationStackView.swift in Sources */,
 				DCB57E5E2996396200316A8E /* iOS16App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
