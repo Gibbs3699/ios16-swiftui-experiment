@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @State var showMenu = false
+    
     var body: some View {
-        Text("Hello")
+        Button("Show Menu") {
+            showMenu = true
+        }
+        .sheet(isPresented: $showMenu) {
+            NavigationStackView()
+                .presentationDetents([.medium, .large])
+        }
     }
     
 }
