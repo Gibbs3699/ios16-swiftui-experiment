@@ -14,6 +14,7 @@
 		DCB57E75299B9AC700316A8E /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E74299B9AC700316A8E /* NavigationStackView.swift */; };
 		DCB57E77299CC23600316A8E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E76299CC23600316A8E /* Data.swift */; };
 		DCB57E79299CC5D900316A8E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E78299CC5D900316A8E /* MessageView.swift */; };
+		DCB57E7B299CC97B00316A8E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E7A299CC97B00316A8E /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DCB57E74299B9AC700316A8E /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		DCB57E76299CC23600316A8E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DCB57E78299CC5D900316A8E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		DCB57E7A299CC97B00316A8E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				DCB57E5F2996396200316A8E /* ContentView.swift */,
 				DCB57E78299CC5D900316A8E /* MessageView.swift */,
 				DCB57E74299B9AC700316A8E /* NavigationStackView.swift */,
+				DCB57E7A299CC97B00316A8E /* MenuView.swift */,
 				DCB57E76299CC23600316A8E /* Data.swift */,
 				DCB57E612996396600316A8E /* Assets.xcassets */,
 				DCB57E632996396600316A8E /* Preview Content */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB57E602996396200316A8E /* ContentView.swift in Sources */,
+				DCB57E7B299CC97B00316A8E /* MenuView.swift in Sources */,
 				DCB57E75299B9AC700316A8E /* NavigationStackView.swift in Sources */,
 				DCB57E5E2996396200316A8E /* iOS16App.swift in Sources */,
 				DCB57E77299CC23600316A8E /* Data.swift in Sources */,
