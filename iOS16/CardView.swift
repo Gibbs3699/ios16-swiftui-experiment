@@ -9,6 +9,23 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
+        Grid {
+            GridRow {
+                card
+                card
+            }
+            GridRow {
+                card.gridCellColumns(2)
+            }
+            GridRow {
+                card
+                card
+            }
+        }
+        .padding(20)
+    }
+    
+    var card: some View {
         VStack(spacing: 12) {
             Image(systemName: "aspectratio")
                 .frame(width: 44, height: 44)
