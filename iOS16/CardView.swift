@@ -9,8 +9,26 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
-        HexagonShape()
-            .frame(width: 44, height: 44)
+        VStack(spacing: 12) {
+            Image(systemName: "aspectratio")
+                .frame(width: 44, height: 44)
+                .foregroundStyle(.linearGradient(colors: [.white, .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .background(HexagonShape().stroke().foregroundStyle(.linearGradient(colors: [.white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: .bottomTrailing)))
+                .background(HexagonShape().foregroundStyle(.linearGradient(colors: [.clear, .white.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing)))
+            Text("Up to 8k Resolution".uppercased())
+                .font(.title3.width(.condensed)).bold()
+                        .multilineTextAlignment(.center)
+                        .layoutPriority(1)
+            Text("From huge monitors to the phone, your wallpaper will look great anywhere.")
+                .font(.footnote)
+                        .multilineTextAlignment(.center)
+                .opacity(0.7)
+                .frame(maxWidth: .infinity)
+        }
+        .padding().padding(.vertical)
+        .background(.black)
+        .foregroundColor(.white)
+        .cornerRadius(20)
     }
 }
 
