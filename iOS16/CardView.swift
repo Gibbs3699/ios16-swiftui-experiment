@@ -42,6 +42,7 @@ struct CardView: View {
                 .opacity(0.7)
                 .frame(maxWidth: .infinity)
         }
+        .frame(maxHeight: .infinity)
         .padding().padding(.vertical)
         .background(.black)
         .foregroundColor(.white)
