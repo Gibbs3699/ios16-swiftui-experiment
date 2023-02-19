@@ -47,6 +47,11 @@ struct CardView: View {
         .background(.black)
         .foregroundColor(.white)
         .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke()
+                .fill(.white.opacity(0.2))
+        )
     }
 }
 
