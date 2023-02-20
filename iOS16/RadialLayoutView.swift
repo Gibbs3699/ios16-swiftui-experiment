@@ -32,6 +32,7 @@ struct RadialLayoutView: View {
                         .font(.system(.title, design: .rounded))
                         .bold()
                         .foregroundColor(.black)
+                        .offset(x: isRadial ? 0 : 50)
                 }
             }
             .frame(width: 240)
@@ -42,6 +43,7 @@ struct RadialLayoutView: View {
                         .font(.system(.caption, design: .rounded))
                         .bold()
                         .foregroundColor(.black)
+                        .offset(x: isRadial ? 0 : 100)
                 }
             }
             .frame(width: 360)
@@ -92,7 +94,8 @@ struct CustomLayout: Layout {
 
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         for (index, subview) in subviews.enumerated() {
-            var point = CGPoint(x: 50 * index, y: 50 * index).applying(CGAffineTransform(rotationAngle: 5))
+            var point = CGPoint(x: 20 * index, y: 20 * index)
+                .applying(CGAffineTransform(rotationAngle: CGFloat(index * 6 + 6)))
 
             // Center
             point.x += bounds.midX
