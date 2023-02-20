@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC731F07299FBB7B0064C7C1 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC731F06299FBB7B0064C7C1 /* GridView.swift */; };
 		DC731F0929A2721C0064C7C1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC731F0829A2721C0064C7C1 /* CardView.swift */; };
+		DC731F0B29A34C8F0064C7C1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC731F0A29A34C8F0064C7C1 /* DetailView.swift */; };
 		DCB57E5E2996396200316A8E /* iOS16App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E5D2996396200316A8E /* iOS16App.swift */; };
 		DCB57E602996396200316A8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E5F2996396200316A8E /* ContentView.swift */; };
 		DCB57E622996396600316A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB57E612996396600316A8E /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		DC731F06299FBB7B0064C7C1 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		DC731F0829A2721C0064C7C1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DC731F0A29A34C8F0064C7C1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DCB57E5A2996396200316A8E /* iOS16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB57E5D2996396200316A8E /* iOS16App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16App.swift; sourceTree = "<group>"; };
 		DCB57E5F2996396200316A8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				DCB57E7C299E086600316A8E /* ChartView.swift */,
 				DC731F06299FBB7B0064C7C1 /* GridView.swift */,
 				DC731F0829A2721C0064C7C1 /* CardView.swift */,
+				DC731F0A29A34C8F0064C7C1 /* DetailView.swift */,
 				DCB57E612996396600316A8E /* Assets.xcassets */,
 				DCB57E632996396600316A8E /* Preview Content */,
 			);
@@ -161,6 +164,7 @@
 				DCB57E602996396200316A8E /* ContentView.swift in Sources */,
 				DC731F0929A2721C0064C7C1 /* CardView.swift in Sources */,
 				DCB57E7B299CC97B00316A8E /* MenuView.swift in Sources */,
+				DC731F0B29A34C8F0064C7C1 /* DetailView.swift in Sources */,
 				DC731F07299FBB7B0064C7C1 /* GridView.swift in Sources */,
 				DCB57E75299B9AC700316A8E /* NavigationStackView.swift in Sources */,
 				DCB57E7D299E086600316A8E /* ChartView.swift in Sources */,
