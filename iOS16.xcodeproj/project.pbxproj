@@ -13,6 +13,7 @@
 		DC731F0D29A358980064C7C1 /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC731F0C29A358980064C7C1 /* RadialLayoutView.swift */; };
 		DCB0BB4529A4CEF700F0A009 /* CardReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB0BB4429A4CEF600F0A009 /* CardReflectionView.swift */; };
 		DCB0BB4729A4D6E900F0A009 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB0BB4629A4D6E900F0A009 /* ActionButtonView.swift */; };
+		DCB0BB4E29ACF41B00F0A009 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB0BB4D29ACF41B00F0A009 /* MotionManager.swift */; };
 		DCB57E5E2996396200316A8E /* iOS16App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E5D2996396200316A8E /* iOS16App.swift */; };
 		DCB57E602996396200316A8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB57E5F2996396200316A8E /* ContentView.swift */; };
 		DCB57E622996396600316A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB57E612996396600316A8E /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		DC731F0C29A358980064C7C1 /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
 		DCB0BB4429A4CEF600F0A009 /* CardReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReflectionView.swift; sourceTree = "<group>"; };
 		DCB0BB4629A4D6E900F0A009 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		DCB0BB4D29ACF41B00F0A009 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		DCB57E5A2996396200316A8E /* iOS16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB57E5D2996396200316A8E /* iOS16App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16App.swift; sourceTree = "<group>"; };
 		DCB57E5F2996396200316A8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				DC731F0C29A358980064C7C1 /* RadialLayoutView.swift */,
 				DCB0BB4429A4CEF600F0A009 /* CardReflectionView.swift */,
 				DCB0BB4629A4D6E900F0A009 /* ActionButtonView.swift */,
+				DCB0BB4D29ACF41B00F0A009 /* MotionManager.swift */,
 				DCB57E612996396600316A8E /* Assets.xcassets */,
 				DCB57E632996396600316A8E /* Preview Content */,
 			);
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB57E602996396200316A8E /* ContentView.swift in Sources */,
+				DCB0BB4E29ACF41B00F0A009 /* MotionManager.swift in Sources */,
 				DC731F0929A2721C0064C7C1 /* CardView.swift in Sources */,
 				DCB57E7B299CC97B00316A8E /* MenuView.swift in Sources */,
 				DC731F0D29A358980064C7C1 /* RadialLayoutView.swift in Sources */,
