@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ActionButtonView: View {
-    
     @State var show = false
     @State var translation: CGSize = .zero
+    @ObservedObject var manager = MotionManager()
     
     var body: some View {
         ZStack {
@@ -18,6 +18,7 @@ struct ActionButtonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(50)
+                .overlay(motion)
                 .scaleEffect(show ? 0.95 : 1)
             Rectangle()
                 .fill(.ultraThickMaterial)
@@ -50,6 +51,20 @@ struct ActionButtonView: View {
         .background(.black)
         .ignoresSafeArea()
         .preferredColorScheme(.dark)
+    }
+    
+    var motion: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 50)
+                .stroke(.linearGradient(colors: [.white.opacity(0.2), .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: abs(manager.roll) * 5 + 1, y: abs(manager.roll) * 5 + 1)))
+                .opacity(show ? 1 : 0)
+            LinearGradient(colors: [.clear, .white.opacity(0.5), .clear], startPoint: .topLeading, endPoint: UnitPoint(x: manager.roll * 10 + 1, y: manager.roll * 10 + 1))
+                .cornerRadius(50)
+                .opacity(show ? 1 : 0)
+            LinearGradient(colors: [Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .blendMode(.softLight)
+        }
+        .opacity(show ? 1.0 : 0)
     }
     
     var drag: some Gesture {
